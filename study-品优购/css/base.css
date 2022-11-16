@@ -1,0 +1,114 @@
+/* 把我们所有标签的内外边距清零 */
+/* *响应太慢 */
+/* 虽然长但是加载比*快，因为 * 是所有的拿来弄一遍 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/font_41639l8qmji/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+    margin: 0;
+    padding: 0;
+    /* css3盒子模型 */
+    box-sizing: border-box;
+}
+
+/* em和i斜体，不倾斜，去掉样式 */
+em,
+i {
+    font-style: normal
+}
+
+/* 去掉li的小圆点 */
+li {
+    list-style: none
+}
+
+img {
+    /* border 0 照顾低版本浏览器 如果 图片包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle
+}
+
+button {
+    /* 当我们鼠标经过button的时候，鼠标变成小手 */
+    cursor: pointer
+}
+
+/* 链接颜色变为#666  取消下划线 */
+a {
+    color: #666;
+    text-decoration: none
+}
+
+/* 鼠标经过链接变为红色 */
+a:hover {
+    color: #c81623
+}
+
+/* 按钮跟提交框的字体回退，没有当前字体就自动切换下一个  */
+/* unicode编码字体  \9ed1\4f53黑体  \5b8b\4f53宋体  \5fae\8f6f\96c5\9ed1微软雅黑 */
+button,
+input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    /* 默认有灰色边框手动去掉 */
+    border: 0;
+    outline: none;
+    
+}
+
+/* body的整个背景色为白色  标准字体 */
+body {
+    /* css3抗锯齿性  让文字显示更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+/* 把我们的样式隐藏起来 */
+.hide,
+.none {
+    display: none
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+/* 低版本清除浮动 */
+.clearfix {
+    *zoom: 1
+}

@@ -1,0 +1,128 @@
+/* 列表页专有的CSS */
+/* 秒杀LOGO */
+.header{
+    position: relative;
+}
+.sk{
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding-left: 14px;
+}
+.sk_list{
+    float: left;
+    height: 45px;
+}
+.sk_list li{
+    float: left;
+}
+.sk_list li a{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 30px;
+    display: block;
+    line-height: 45px;
+    color: #000;
+}
+.sk_con{
+    float: left;
+}
+.sk_con li{
+    float: left;
+}
+.sk_con li a{
+    font-size: 14px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+.sk_con li:nth-last-child(1) a:after{
+    content: '\e69a';
+    font-family: 'iconfont';
+    font-size: 14px;
+    line-height: 45px;
+    padding: 0 2px;
+}
+
+
+
+
+
+.sk_bd{
+margin-top: 25px;
+margin-bottom: 250px;
+}
+.sk_bd ul{
+    display: inline-block;
+ 
+}
+.sk_bd ul li{
+    float: left;
+    margin-right: 12px;
+    height: 460px;
+    width: 290px;
+    border: 1px solid transparent;
+}
+.sk_bd ul li:hover{
+    border: 1px solid #b1191a;
+}
+.sk_bd ul li:nth-child(4n){
+    float: left;
+    height: 460px;
+    width: 290px;
+    margin-right: 0;
+}
+.sk_bd ul li a img{
+    text-align: center;
+}
+.sk_bd ul li a p{
+    margin-top: 5px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #747474;
+}
+.bargain_text .symbal{
+    font-size: 14px;
+    color: #e60012;
+}
+.bargain_text .bar_num{
+    font-size: 22px;
+    color: #e60012;
+    margin-left: -5px;
+}
+.bargain_text .bar_del{
+    text-decoration: line-through;
+}
+.bar_in{
+    text-align: center;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+}
+.bar_in span{
+    line-height: 24px;
+}
+.pro_bar{
+    display: inline-block;
+    width: 130px;
+    height: 14px;
+    border: 1px solid #ed282e;
+    border-radius: 6px;
+}
+.pro_bar_in{
+    width: 90%;
+    height: 100%;
+    background-color: #ed282e;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.now{
+    margin-top: 10px;
+    width: 290px;
+    height: 50px;
+    background-color: #b1191a;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
